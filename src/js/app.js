@@ -1,10 +1,7 @@
-import GameSavingLoader from './class/example.js';
+import GameSavingLoader from './class/example';
 
-
-let g = GameSavingLoader.load()
+GameSavingLoader.load()
   .then(
-    (result) => (result),
+    (result) => ((result)),
     (error) => (error.name),
   );
-
- setTimeout(() => console.log('output', g), 3500);
